@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<div>page1</div>
+<form action="ts" method="POST">
+	<input type="submit" value="测试doPost">
+</form>
+<!--通过提交表单调用doPost-->
+
+<a href="../log/log?para=1" onclick="window.location.href='page2.jsp'">doGet基本测试</a>
+<!--TODO：修正：这样的语法是不对的，onclick等后面一串是js中的语法。需要在servlet里调用网页-->
+
+<!--通过href语法向/testSession/ts发送get请求-->
+<!--href用于调用servlet程序，window.location用于网页跳转-->
+<!--href由servlet地址（以工件文件夹为主目录）、'?'分隔符、需要传递的参数组成-->
+<!--获取参数只需要在doGet中，进行req.getParameter("para")即可-->
+<br>
+<a href="../log/log?order=2&link=page2.jsp">doGet正式测试</a>
+</body>
+</html>

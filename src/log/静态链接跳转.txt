@@ -1,0 +1,4 @@
+在href里以一定的格式，发送Get请求给特定Servlet程序，借此跳转即可
+见web/testSession/page1.html内的静态链接
+
+约定标志参数
